@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="project">
-          <Weather />
+          <weather defaultCity="Madrid" />
           <div className="link">
             <p>This project was coded by Leire Valencia 🌙 and is 
               <a href="https://github.com/leirevalencia/weather-react" target="_blank" rel="noreferrer"> open-source on GitHub 🐱</a>
