@@ -1,0 +1,73 @@
+/*SEARCHBOX SECTION*/
+.searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .search {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px 5px;
+    border: 1px solid;
+    padding: 0 15px;
+  }
+  
+  .button {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px 10px;
+    border: 1px solid;
+    padding: 0 15px;
+  }
+  
+  /*CONTENT SECTION*/
+  .Content {
+    line-height: 15px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 60px;
+    color: rgb(3, 81, 154);
+    text-transform: capitalize;
+  }
+  
+  #date-time {
+    font-size: 30px;
+  }
+  
+  #description {
+    text-transform: capitalize;
+  }
+  
+  /* DESCRIPTION SECTION*/
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+    transform: translate (-70px, 0);
+    gap: 10px;
+  }
+  
+  .grades {
+    font-size: 15px;
+  }
+  
+  /*INFO SECTION*/
+  .info {
+    
+    line-height: 15px;
+  }
+
+  /*LINK*/
+  .link {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(236, 114, 135);
+  }
