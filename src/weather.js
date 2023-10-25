@@ -63,5 +63,6 @@ function search() {
         );
     } else {
         search();
-        return "the app is loading...";
+        return 'the app is loading...';
     }
+}
