@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import './weather.css';
+import WeatherTemperature from "./WeatherTemperature";
 
 
 export default function WeatherInfo (props) {
@@ -23,16 +24,6 @@ export default function WeatherInfo (props) {
                         <p className="temperature" id="temperature">
                             {Math.round(props.data.temperature)}
                         </p>
-                        <p className="grades">
-                            <a href="#" id="celsius">
-                                {" "}
-                                ºC | {" "}
-                            </a>
-                            <a href="#" id="fahrenheit">
-                                {" "}
-                                ºF {" "}
-                            </a>
-                        </p>
                     </div>
                     <div className="info">
                         
@@ -48,7 +39,8 @@ export default function WeatherInfo (props) {
                             <strong>🌚 Moon phase:</strong>
                             <span id="moon-phase"> cuarto creciente</span>
                         </p>
-                        
+                        <WeatherTemperature celsius={props.data.temperature} />
+
                     </div>
                 </div>
 
