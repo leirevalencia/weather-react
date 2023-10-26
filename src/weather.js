@@ -42,9 +42,9 @@ function search() {
     if (ready) {
         return (
             <div className="weather">
-                <div className="searchbox">
+                <form className="searchbox" onSubmit={handleSubmit}>
                     <input 
-                    onSubmit={handleSubmit}
+                    onChange={handleCity}
                     type="search"
                     className="search"
                     placeholder="🐾 Search city ..."
@@ -52,12 +52,11 @@ function search() {
                     id="Search"
                     />
                     <input
-                    onChange={handleCity}
                     type="submit"
                     className="button"
                     value="Search"
                     />
-                </div>
+                </form>
                 <WeatherInfo data={weatherData} />
             </div>
         );

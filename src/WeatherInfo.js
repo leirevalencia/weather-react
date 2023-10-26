@@ -20,7 +20,6 @@ export default function WeatherInfo (props) {
                         alt={props.data.description}
                         className="float-left"
                         />
-                        <p className="image">🌥</p>
                         <p className="temperature" id="temperature">
                             {Math.round(props.data.temperature)}
                         </p>
