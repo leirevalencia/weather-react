@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import WeatherInfo from "./WeatherInfo";
+import DailyForecast from "./DailyForecast";
 import './weather.css';
 import axios from "axios";
 
@@ -58,6 +59,7 @@ function search() {
                     />
                 </form>
                 <WeatherInfo data={weatherData} />
+                <DailyForecast data={weatherData} />
             </div>
         );
     } else {

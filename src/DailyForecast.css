@@ -1,0 +1,17 @@
+.week {
+    text-align: center;
+}
+
+.day {
+    line-height: normal;
+    margin-bottom: -10px;
+}
+
+img {
+    height: 125px;
+}
+
+.max-min {
+    line-height: normal;
+    margin-top: -10px;
+}
