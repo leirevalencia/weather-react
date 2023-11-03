@@ -15,3 +15,8 @@ img {
     line-height: normal;
     margin-top: -10px;
 }
+
+.forecast-week {
+    display: flex;
+    justify-content: space-evenly;
+}
