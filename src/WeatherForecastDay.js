@@ -27,7 +27,7 @@ export default function WeatherForecastDay(props) {
             </p>
             <img 
                 src={props.data.condition.icon_url}
-                alt={props.data.description}
+                alt={props.data.condition.description}
             />
             <p className="max-min">
                 <span ClassName="min-temperature">
