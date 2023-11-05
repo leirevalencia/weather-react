@@ -4,15 +4,14 @@ import './DailyForecast.css';
 import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function DailyForecast(props) {
+    console.log(props.data.coordinates);
     let [loaded, setLoaded] = useState(false);
     let [forecast, setForecast] = useState(null);   
     
     useEffect(() => {
         setLoaded(false);
-    }, [props.data.city]);
+    }, [props.data.coordinates]);
     
-    //if the coordinates change
-    //set loaded false
 
     function handleResponse(response) {
         console.log(response.data);
@@ -42,7 +41,7 @@ export default function DailyForecast(props) {
          
     }else {
         let apiKey = "d48505t8703c543fo79ae4f4d413e7bf"
-        let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query={query}&key=${apiKey}`;
+        let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${props.data.city}&key=${apiKey}`;
     
         axios.get(apiUrl).then(handleResponse); 
         return null;  

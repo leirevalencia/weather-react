@@ -35,10 +35,6 @@ export default function WeatherInfo (props) {
                             <strong>💧 Humidity:</strong>
                             <span id="humid"> {props.data.humidity} % </span>
                         </p>
-                        <p className="moon">
-                            <strong>🌚 Moon phase:</strong>
-                            <span id="moon-phase"> cuarto creciente</span>
-                        </p>
                         <WeatherTemperature celsius={props.data.temperature} />
 
                     </div>

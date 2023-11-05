@@ -54,6 +54,10 @@
     transform: translate (-70px, 0);
     gap: 10px;
   }
+
+  .description img {
+    height: 200px;
+  }
   
   .grades {
     font-size: 15px;
@@ -71,3 +75,5 @@
     text-align: center;
     color: rgb(236, 114, 135);
   }
+
+ 
